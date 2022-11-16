@@ -1,0 +1,8 @@
+
+watch는 클래스 단위의 위젯을 통째로 listen 시키므로(select 마찬가지)
+
+한 위젯에 read, watch, select가 같이 있으면 
+
+read는 listen시키지 않지만 
+
+watch, select으로 인해 위젯을 통째로 리빌드 시키므로 read로 가져온 프로바이더도 갱신된다

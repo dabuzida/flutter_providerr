@@ -1,0 +1,9 @@
+i-counter 와 다르게
+
+클래스 단위의 위젯으로 read, watch, select를 구분시킴
+
+read는 listen 하지않아 리빌드 되지 않으므로, set state로 수동으로 리빌드 시키면 watch, select와 같아짐
+
+num 증가시, watch만 리빌드, select는 2,3만 감지중이므로
+num2 증가시, watch, select 리빌드
+num3 증가시, watch, select 리빌드, watch는 클래스 자체를 감지하므로 리빌드됨
